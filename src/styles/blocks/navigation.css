@@ -32,12 +32,6 @@
     transition: 0.5s;
 }
 
-.navigation__button--active {
-    width: 18px;
-    height: 26px;
-    transform: rotate(90deg);
-}
-
 @media (min-width: 500px) {
     .navigation__button {
         display: none;
@@ -88,7 +82,7 @@
     margin: 0;
     padding: 10px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #000000;
 }
