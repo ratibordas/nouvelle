@@ -12,23 +12,24 @@
         <button class="navigation__button"
             aria-label="Открыть меню"
             aria-expanded="false"
+            aria-controls="navigation-menu"
             type="button"
         ></button>
-        <ul class="navigation__pages">
+        <ul id="navigation-menu" class="navigation__pages">
             <li class="navigation__page">
-                <a class="navigation__link" href="/articles/">Статьи</a>
+                <a class="navigation__link" href="/articles/" tabindex="-1">Статьи</a>
             </li>
             <li class="navigation__page">
-                <a class="navigation__link">Конференция</a>
+                <a class="navigation__link" href="#" tabindex="-1">Конференция</a>
             </li>
             <li class="navigation__page">
-                <a class="navigation__link">Календарь</a>
+                <a class="navigation__link" href="#" tabindex="-1">Календарь</a>
             </li>
             <li class="navigation__page">
-                <a class="navigation__link">Подкаст</a>
+                <a class="navigation__link" href="#" tabindex="-1">Подкаст</a>
             </li>
             <li class="navigation__page">
-                <a class="navigation__link">О проекте</a>
+                <a class="navigation__link" href="#" tabindex="-1">О проекте</a>
             </li>
             <li class="navigation__page navigation__page--right">
                 <a class="navigation__link" href="https://www.patreon.com/webstandards_ru">Поддержать проект</a>

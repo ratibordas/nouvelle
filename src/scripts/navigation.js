@@ -22,7 +22,7 @@ const showHideNavigationMenu = () => {
     navigationPages.classList.toggle('navigation__pages--active');
 };
 
-navigationButton.addEventListener('click', event => {
+navigationButton.addEventListener('click', () => {
     handleNavigationMenuState();
     showHideNavigationMenu();
 });
