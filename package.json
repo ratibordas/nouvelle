@@ -3,7 +3,8 @@
   "scripts": {
     "start": "npx eleventy --serve --quiet",
     "build": "npx eleventy --quiet",
-    "test": "stylelint 'src/styles/**/*.css'"
+    "test": "stylelint 'src/styles/**/*.css'",
+    "lint-md": "remark ."
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
@@ -141,5 +142,13 @@
       "no-eol-whitespace": true,
       "no-missing-end-of-source-newline": true
     }
+  },
+  "dependencies": {
+    "remark-cli": "^7.0.0",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-recommended": "^3.0.3"
+  },
+  "remarkConfig": {
+    "plugins": ["remark-preset-lint-recommended"]
   }
 }
